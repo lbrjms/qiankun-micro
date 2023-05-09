@@ -1,0 +1,31 @@
+{
+  "name": "qiankun-micro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-run-all --serial install:*",
+    "install:main": "cd main && npm i",
+    "install:sub-vue2": "cd sub-vue2 && npm i",
+    "install:sub-vue3": "cd sub-vue3 && npm i",
+    "install:sub-html": "cd sub-html && npm i",
+    "start": "npm-run-all --parallel start:*",
+    "start:sub-vue2": "cd sub-vue2 && npm start",
+    "start:sub-vue3": "cd sub-vue3 && npm start",
+    "start:main": "cd main && npm start",
+    "start:sub-html": "cd sub-html && npm start",
+
+    "build": "npm-run-all build:* && bash ./scripts/bundle.sh",
+    "build:sub-vue3": "cd sub-vue3 && npm run build",
+    "build:sub-vue2": "cd sub-vue2 && npm run build",
+    "build:sub-html": "cd sub-html && npm run build",
+    "build:main": "cd main && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

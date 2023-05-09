@@ -1,0 +1,17 @@
+{
+  "name": "sub-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "cross-env PORT=5110 http-server . --cors",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bash ./scripts/build.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "http-server": "^0.12.1"
+  }
+}
