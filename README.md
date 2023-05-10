@@ -1,4 +1,4 @@
-# qiankun 微前端搭建 包含vite vue3 vue2 纯html 公用事件抽取  公用状态封装  全局loading
+# qiankun 微前端搭建 包含vite vue3 vue2 纯html 公用事件抽取  公用状态封装  全局loading  一键安装 一键启动 一键打包
 
 ## 主应用
 
